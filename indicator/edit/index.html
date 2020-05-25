@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Конструктор показателя</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.common.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.light.css"/>
+  <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/dx.all.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/localization/dx.messages.ru.js"></script>
+  <script src="localization.js"></script>
+  <script src="config.js"></script>
+  <script src="dimensions.js"></script>
+  <script src="timeDimensions.js"></script>
+  <script src="preFilters.js"></script>
+  <script src="measures.js"></script>
+  <script src="index.js"></script>
+
+</head>
+<body class="dx-viewport">
+<div class="container">
+  <div id="form">
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <h3>Общая информация</h3>
+        <div class="dx-field-label">Код показателя</div>
+        <div class="dx-field-value">
+          <div id="indicator-code"></div>
+        </div>
+      </div>
+
+      <div class="dx-field">
+        <div class="dx-field-label">Название</div>
+        <div class="dx-field-value">
+          <div id="indicator-name"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Название на английском</div>
+        <div class="dx-field-value">
+          <div id="indicator-name-eng"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Время обновления (методология)</div>
+        <div class="dx-field-value">
+          <div id="indicator-refresh-time"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Частота обновления (в секундах)</div>
+        <div class="dx-field-value">
+          <div id="indicator-scheduled-refresh-timer"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Дата начала действия показателя</div>
+        <div class="dx-field-value">
+          <div id="indicator-date-from"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Дата окончания действия показателя</div>
+        <div class="dx-field-value">
+          <div id="indicator-date-to"></div>
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Описание</div>
+        <div class="dx-field-value">
+          <div id="indicator-description"></div>
+        </div>
+      </div>
+      <div id="dimensions">
+        <div class="dx-field">
+          <h3>Измерения</h3>
+          <div id="dimensions-fieldset-wrapper"></div>
+          <div id="add-dimension"></div>
+        </div>
+      </div>
+      <div id="time-dimensions">
+        <div class="dx-field">
+          <h3>Измерения времени</h3>
+          <div id="time-dimensions-fieldset-wrapper"></div>
+          <div id="add-time-dimension"></div>
+        </div>
+      </div>
+      <div id="measures">
+        <div class="dx-field">
+          <h3>Меры</h3>
+          <div id="measures-fieldset-wrapper"></div>
+          <div id="add-measure"></div>
+        </div>
+      </div>
+      <div id="pre-filters">
+        <div class="dx-field">
+          <h3>Префильтры</h3>
+          <div id="pre-filters-fieldset-wrapper"></div>
+          <div id="add-pre-filter"></div>
+        </div>
+      </div>
+
+
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      <div id="save-indicator"></div>
+      <div id="CRUD-result"></div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
